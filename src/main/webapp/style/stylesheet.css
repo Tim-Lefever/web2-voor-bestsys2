@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #EAE8DC;
+}
+
+body {
+    max-width: 60em;
+    margin: auto;
+    background-color: #F4F2EC;
+    box-shadow: 0 0 1em 1em #A9A9A9;
+}
+
+h1 {
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    background-color: #001A36;
+    color: #F4F2EC;
+    margin: 0;
+    padding: 50px 15px;
+}
+
+h2 {
+    line-height: 2em;
+}
+
+nav {
+    background-color: #0E3746;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #F4F2EC;
+    transition: background-color 300ms;
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+nav a:hover {
+    background-color: #6495ed;
+    transition: background-color 300ms;
+}
+
+main {
+    padding: 20px;
+}
+
+main p {
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+.overview {
+    width: 100%;
+    margin: auto 10px 15px 10px;
+    overflow: no-display;
+}
+
+.overview th {
+    padding: 12px 2px;
+    background-color: #0E3746;
+    color: #F4F2EC;
+    text-align: left;
+}
+
+.overview tr:nth-child(even) {
+    background-color: #EAE8DC;
+}
+
+.overview td, .overview th {
+    padding: 8px;
+}
+
+.overview tr:hover {
+    background-color: #ddd;
+}
+
+.overview .deleteImage, .overview .editImage {
+    width: 1em;
+}
+
+footer {
+    background-color: #001A36;
+    color: #F4F2EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.submit {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 33%;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    line-height: 2em;
+    font-size: 1.2em;
+    padding: 20px;
+    border: 3px groove #0E3746;
+    border-radius: 30px;
+}
+
+.form label {
+    text-align: right;
+
+}
+
+.form input {
+    max-width: 100%;
+    width: 75%;
+}
+
+.form .foutiefVeld {
+    background-color: #ffe0e0;
+    border: 1px solid #a33a3a;
+}
+
+.foutmelding{
+    padding: 10px;
+    margin: 10px;
+    color: #ba3939;
+    background: #ffe0e0;
+    border: 1px solid #a33a3a;
+}
+
+.knoppenlijst {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+}
+
+.knoppenlijst > * {
+    width: 100%;
+    list-style-type: none;
+}
+
+
+.knoppenlijst li button {
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: #F4F2EC;
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+}
+
+.knoppenlijst .green {
+    background-color: #228b22;
+}
+
+.knoppenlijst .red {
+    background-color: #a33a3a;
+}
+
+@media screen and (min-width: 700px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 5px;
+    }
+
+    nav li {
+        flex-grow: 1;
+    }
+
+    #homeArt > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .knoppenlijst {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .knoppenlijst li {
+        width: 25%;
+    }
+}

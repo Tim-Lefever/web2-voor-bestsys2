@@ -1,0 +1,8 @@
+<nav>
+    <ul>
+        <li><a href="Controller?command=home">Home</a></li>
+        <li><a href="Controller?command=voegToe">Nieuwe puzzel</a></li>
+        <li><a href="Controller?command=overview">Overzicht</a></li>
+        <li><a href="Controller?command=zoekPagina">Zoek</a></li>
+    </ul>
+</nav>
